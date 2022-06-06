@@ -1,0 +1,11 @@
+<app-navbar></app-navbar>
+  <br/>
+  <br/>
+
+  <div class="container">
+    <ul class="collection">
+      <li *ngFor="let writer of writers" class="collection-item">
+        <p>{{ writer.firstName }} {{writer.lastName}}</p>
+      </li>
+    </ul>
+  </div>

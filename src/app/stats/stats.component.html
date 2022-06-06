@@ -1,0 +1,15 @@
+<app-navbar></app-navbar>
+  <br/>
+  <br/>
+  
+  <div class="container">
+    <table class="collection">
+        <tbody>
+            <tr *ngFor="let stat of stats" class="collection-item">
+                <td>{{stat.date}}</td>
+                <td>{{stat.singleVowelCount}}</td>
+                <td>{{stat.pairVowelCount}}</td>
+            </tr>
+        </tbody>
+    </table>
+  </div>

@@ -1,0 +1,11 @@
+<nav>
+    <div class="nav-wrapper">
+      <a href="#" class="brand-logo">Logo</a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a routerLink="/story">Write Story</a></li>
+        <li *ngIf="isModerator"><a routerLink="/stats">Stats</a></li>
+        <li *ngIf="isModerator"><a routerLink="/users">EditUsers</a></li>
+        <li><a (click)="LogOut()">Logout</a></li>
+      </ul>
+    </div>
+  </nav>

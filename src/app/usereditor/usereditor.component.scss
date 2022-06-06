@@ -1,0 +1,7 @@
+[type="checkbox"]:not(:checked), [type="checkbox"]:checked{
+    opacity: 100;
+}
+
+select {
+     display: block;
+}

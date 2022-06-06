@@ -1,0 +1,15 @@
+<app-navbar></app-navbar>
+  <br/>
+  <br/>
+
+  <div class="container">
+    <ul class="collection">
+      <li *ngFor="let user of users" class="collection-item">
+        <p>{{ user.firstName }} {{user.lastName}},  
+            editor : {{user.isEditor}}, 
+            banned : {{user.isBanned}}
+        </p> 
+        <button class="waves-effect waves-light btn" routerLink="/users/user/{{user.userId}}"> Edit </button>
+      </li>
+    </ul>
+  </div>

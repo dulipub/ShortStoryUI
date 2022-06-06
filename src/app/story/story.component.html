@@ -1,0 +1,27 @@
+<app-navbar></app-navbar>
+<br/>
+<br/>
+
+<div class="container">
+    <div class="row">
+      <div class="col s8 offset-s2">
+        <div class="card grey lighten-2">
+            <form #storyForm="ngForm" class="col s12 white" (ngSubmit)="OnSubmit(PostText.value)">
+                <div class="row">
+                  <div class="input-field col s12">
+                    <textarea  #PostText="ngModel" name="PostText" [(ngModel)]="story.Text" placeholder="text" required maxlength="500">
+                    </textarea>
+                  </div>
+                </div>
+                 <div class="row">
+                     <div class="input-field col s12">
+                       <button [disabled]="!storyForm.valid" class="btn-large btn-submit" type="submit">Post</button>
+                     </div>
+                   </div>
+             </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
